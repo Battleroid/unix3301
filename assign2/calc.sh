@@ -19,4 +19,7 @@ case $action in
 		echo "Division"
 		echo `expr ${input[0]} / ${input[1]}`
 		;;
+	*)
+		echo "Incorrect action"
+		;;
 esac

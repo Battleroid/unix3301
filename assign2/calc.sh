@@ -1,6 +1,7 @@
 #!/bin/bash
 # Casey Weed
-read -p "Action: " action 
+read -n 1 -p "Action: " action 
+echo # We just need a newline
 read -a input -p "Numbers: "
 case $action in
 	a)

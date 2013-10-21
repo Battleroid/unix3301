@@ -7,11 +7,7 @@ function prepare_input($input) {
 if (!isset($_POST) || empty($_POST) || $_SERVER['REQUEST_METHOD'] != "POST")
 	die("Form not submitted. Navigate to the <a href='index.html'>form</a>.");
 
-/*
- * set variables and sanitize them, my function for 'preparing' the input is
- * probably overzealous and not needed, however, it seems to work, though I
- * could do without htmlspecialchars since no HTML is going to be appended
- */
+// set variables and sanitize
 $val['fname']   = prepare_input(filter_var(preg_replace('/[^A-Za-z0-9\s.\s-]/', '', $_POST['fname']), FILTER_SANITIZE_STRING));
 $val['lname']   = prepare_input(filter_var(preg_replace('/[^A-Za-z0-9\s.\s-]/', '', $_POST['lname']), FILTER_SANITIZE_STRING));
 $val['address'] = prepare_input(filter_var(preg_replace('/[^A-Za-z0-9\#\s.\s-]/', '', $_POST['address']), FILTER_SANITIZE_STRING));

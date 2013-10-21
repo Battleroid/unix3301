@@ -7,7 +7,7 @@ if (!@$f = fopen("contacts", "r")) {
 	/*
 	 * first split entries in the file by newline characters to get
 	 * individual entries, then split them into multiple parts that
-	 * we can use by exploding them by a comma.
+	 * we can use by exploding them by a '|' for each field.
 	 */
 	$contacts = explode(PHP_EOL, fread($f, filesize("contacts")));
 	if (empty(end($contacts)))

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Casey Weed -->
+		<meta charset="UTF-8">
+		<title>Assignment 3</title>
+		<link rel="stylesheet" href="default.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<form action="reg.php" method="post">
+				<fieldset>
+				<legend>Contact Information</legend>
+				<div class="control-group">
+				<label for="fname">First Name</label>
+				<input placeholder="John" autofocus id="fname" type="text" name="fname" required>
+			</div>
+			<div class="control-group">
+				<label for="lname">Last Name</label>
+				<input placeholder="Smith" id="lname" type="text" name="lname" required>
+			</div>
+			<div class="control-group">
+				<label for="address">Address</label>
+				<input placeholder="123 Candy Lane" id="address" type="text" name="address" required>
+			</div>
+			<div class="control-group">
+				<label for="state">State</label>
+				<select id="state" name="state">
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>
+				</select>
+			</div>
+			<div class="control-group">
+				<label for="zip">Zip</label>
+				<input placeholder="12345" id="zip" type="text" name="zip" required>
+			</div>
+			<div class="control-group">
+				<label for="phone">Telephone</label>
+				<input placeholder="1 (912) 555-5555" id="phone" type="text" name="phone" required>
+			</div>
+			<div class="control-group">
+				<label for="email">Email</label>
+				<input placeholder="jsmith@email.com" id="email" type="email" name="email" required>
+			</div>
+			<div class="control-group">
+				<input type="reset" value="Reset">
+				<input id="submitdb" type="submit" name="submitdb" value="Save to Database">
+				<input id="submitfile" name="submitfile" type="submit" value="Save to File">
+			</div>
+		</fieldset>
+	</form>
+	<a href="viewdb.php">View Contacts in Database</a><br>
+	<a href="viewfile.php">View Contacts in File</a>
+</div>
+	</body>
+</html>

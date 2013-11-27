@@ -12,3 +12,8 @@ Assignment 3
 ------------
 
 See [ASSIGN3.md](assign3/ASSIGN3.md) for more information on the requirements and setup.
+
+Assignment 4
+------------
+
+See [ASSIGN4.md](assign4/ASSIGN4.md) for more information.

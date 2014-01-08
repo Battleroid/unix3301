@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST) && !empty($_POST) && $_SERVER['REQUEST_METHOD'] == "POST") {
-	if ($_POST['amount'] % 25 != 0 && $_POST['amount'] > 100)
+	if ($_POST['amount'] % 25 != 0 && $_POST['amount'] >= 100)
 		die("Improper input, try again.");
 }
 
